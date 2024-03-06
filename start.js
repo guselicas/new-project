@@ -20,3 +20,10 @@ if(typeof subject == "object"){
 					return row.getElement() === subject;
 				});
 //hihi
+return match || false;
+			}else if(subject === null){
+				return false;
+			}
+		}else if(typeof subject == "undefined"){
+			return false;
+		}else{
